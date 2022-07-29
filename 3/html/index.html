@@ -5,7 +5,7 @@
 <meta http-equiv="cache-control" content="max-age=200"/>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Blue Eyes</title>
+<title>Synox</title>
 <link rel="stylesheet" type="text/css" href="animate.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="global.css" media="screen"/>
 
@@ -26,8 +26,6 @@
     <div class="box">
       <div class="slide_jumper">
 		  <div class="slides"><img src="thumbs/01.png" alt=""></div>
-          <div class="slides"><img src="thumbs/02.png" alt=""></div>
-          <div class="slides"><img src="thumbs/03.png" alt=""></div>    
       </div>
     </div>
     <div class="box_btn"></div>
@@ -38,16 +36,17 @@
 <script src="global.js" type="text/javascript" language="javascript"></script> 
 <script>
 var startTime = Date.now();
+
 //step 1:
 var temp = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_1");
 	
-	if(temp == null){			
-			localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_1" ,startTime);
-			localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_1",0);
-			//to capture start time of 1st slide in db format
-			var startTime1InDBFormat = currentTimeInDatabaseFormat();
-			//alert(startTime1InDBFormat);
-			localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_1" ,startTime1InDBFormat);	
+	if(temp == null){
+		localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_1" ,startTime);
+		localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_1",0);
+		//to capture start time of 1st slide in db format
+		var startTime1InDBFormat = currentTimeInDatabaseFormat();
+		//alert(startTime1InDBFormat);
+		localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_1" ,startTime1InDBFormat);
 	}
 //step 1 ends here..
 
@@ -64,15 +63,9 @@ if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && local
 	var custcomslideid = parseInt(localStorage.getItem("currentcontentcustomslideId")) ;
 	
 	switch(custcomslideid){
-	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
+		case 1:
+		content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide1/2.gif" alt="" width="600"/></div>';
+		break;
 	}
 
 	$("#main_content").html(content);
@@ -82,8 +75,10 @@ if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && local
 	 
 }else{
 
-$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>');
+$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide1/2.gif" alt="" width="600"/></div><div class="capsule"><img src="slide1/3.png"></div><div class="pellet1"><img src="slide1/4.png"></div><div class="pellet2"><img src="slide1/5.png"></div><div class="pellet3"><img src="slide1/6.png"></div><div class="pellet4"><img src="slide1/7.png"></div><div class="pellet5"><img src="slide1/8.png"></div><div class="pellet6"><img src="slide1/8.png"></div><div class="pellet7"><img src="slide1/5.png"></div><div class="pellet8"><img src="slide1/4.png"></div><div class="pellet9"><img src="slide1/6.png"></div><div class="pellet10"><img src="slide1/7.png"></div>div class="pellet11"><img src="slide1/4.png"></div><div class="pellet12"><img src="slide1/5.png"></div><div class="pellet13"><img src="slide1/6.png"></div><div class="pellet14"><img src="slide1/7.png"></div><div class="pellet15"><img src="slide1/8.png"></div><div class="pellet16"><img src="slide1/7.png"></div><div class="pellet17"><img src="slide1/4.png"></div>');
+
 }
+
 });
 </script> 
 
