@@ -21,3 +21,51 @@
   animation-fill-mode: both;
   z-index: 2;
 }
+
+.stamp {
+  position: absolute;
+  left: 592px;
+  top: 69px;
+  width: 198px;
+  height: 182px;
+  animation: stampIn 0.3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 7;
+}
+
+
+@-webkit-keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.stampIn {
+  -webkit-animation-name: stampIn;
+  animation-name: stampIn;
+}
