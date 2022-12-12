@@ -1,0 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.background {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  left: 202px;
+  top: 80px;
+  width: 711px;
+  height: 108px;
+  animation: flipInX 0.3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
