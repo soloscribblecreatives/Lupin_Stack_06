@@ -12,10 +12,10 @@
 
 .s1_2 {
   position: absolute;
-  left: 340px;
-  top: 26px;
-  width: 470px;
-  height: 178px;
+  left: 400px;
+  top: 15px;
+  width: 530px;
+  height: 155px;
   animation: flipInX 0.3s;
   animation-delay: 0.2s;
   animation-fill-mode: both;

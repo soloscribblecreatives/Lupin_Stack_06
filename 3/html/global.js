@@ -347,7 +347,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide1/2.gif" alt="" width="600"/></div><div class="capsule"><img src="slide1/3.png"></div><div class="pellet1"><img src="slide1/4.png"></div><div class="pellet2"><img src="slide1/5.png"></div><div class="pellet3"><img src="slide1/6.png"></div><div class="pellet4"><img src="slide1/7.png"></div><div class="pellet5"><img src="slide1/8.png"></div><div class="pellet6"><img src="slide1/8.png"></div><div class="pellet7"><img src="slide1/5.png"></div><div class="pellet8"><img src="slide1/4.png"></div><div class="pellet9"><img src="slide1/6.png"></div><div class="pellet10"><img src="slide1/7.png"></div>div class="pellet11"><img src="slide1/4.png"></div><div class="pellet12"><img src="slide1/5.png"></div><div class="pellet13"><img src="slide1/6.png"></div><div class="pellet14"><img src="slide1/7.png"></div><div class="pellet15"><img src="slide1/8.png"></div><div class="pellet16"><img src="slide1/7.png"></div><div class="pellet17"><img src="slide1/4.png"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768"/></div><div class="s1_2"><img src="slide1/s1_2.gif" width="560"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
 	break;
 
 }

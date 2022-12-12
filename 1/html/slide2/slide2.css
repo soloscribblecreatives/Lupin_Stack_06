@@ -12,10 +12,10 @@
 
 .logo {
   position: absolute;
-  left: 93px;
-  top: 34px;
-  width: 711px;
-  height: 108px;
+  left: 94px;
+  top: 31px;
+  width: 488px;
+  height: 283px;
   animation: zoomIn 0.3s;
   animation-delay: 0.2s;
   animation-fill-mode: both;
@@ -24,15 +24,16 @@
 
 .stamp {
   position: absolute;
-  left: 592px;
-  top: 69px;
-  width: 198px;
-  height: 182px;
-  animation: stampIn 0.3s;
+  left: 636px;
+  top: 50px;
+  width: 125px;
+  height: 123px;
+  animation: zoomIn 0.3s;
   animation-delay: 1s;
   animation-fill-mode: both;
   z-index: 7;
 }
+
 
 
 @-webkit-keyframes stampIn {
