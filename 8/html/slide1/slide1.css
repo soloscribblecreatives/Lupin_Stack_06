@@ -13,11 +13,11 @@
 .s1_2 {
   position: absolute;
   left: 391px;
-  top: 35px;
-  width: 572px;
-  height: 160px;
-  animation: flipInX 0.3s;
-  animation-delay: 0.2s;
+  top: 96px;
+  width: 492px;
+  height: 130px;
+  animation: flipInX 0.5s;
+  animation-delay: 0s;
   animation-fill-mode: both;
   z-index: 2;
 }
