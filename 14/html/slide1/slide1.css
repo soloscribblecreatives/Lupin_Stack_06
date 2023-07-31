@@ -1,23 +1,99 @@
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+	margin: 0px;
+	padding: 0px;
 }
 
-.background {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  z-index: 1;
+.s1_1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
 }
 
-.logo {
+.s1_2 {
   position: absolute;
-  left: 202px;
-  top: 80px;
-  width: 711px;
-  height: 108px;
-  animation: flipInX 0.3s;
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
-  z-index: 2;
+  left: 395px;
+  top: 52px;
+  width: 234px;
+  height: 173px;
+	animation: flipInX 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+	z-index: 10;
+}
+
+.s1_3 {
+	position: absolute;
+  left: 40px;
+  top: 404px;
+  width: 944px;
+  height: 320px;
+	animation: fadeInUp 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+	z-index: 10;
+}
+
+.s1_4 {
+	position: absolute;
+  left: 412px;
+  top: 358px;
+  width: 202px;
+  height: 232px;
+	animation: zoomIn 0.3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+	z-index: 8;
+}
+
+
+.s1_5 {
+	position: absolute;
+  left: 412px;
+  top: 358px;
+  width: 202px;
+  height: 232px;
+	animation: pulse 2s infinite;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+	z-index: 10;
+}
+
+
+.popup {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 7;
+	display: none;
+}
+
+.pop_open {
+	position: absolute;
+	width: 120px;
+	height: 100px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 5;
+}
+
+.pop_close {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 10;
+	display: none;
+}
+
+
+@keyframes stampIn {
+	0%	{
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0;
+	}
+	100%	{
+		transform: scale(1);
+		opacity: 1;
+	}
 }
