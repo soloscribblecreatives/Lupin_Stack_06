@@ -3,71 +3,8 @@
 	padding: 0px;
 }
 
-.s1_1 {
+.background {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	z-index: 1;
-}
-
-.s1_2 {
-  position: absolute;
-  left: 175px;
-  top: 73px;
-  width: 490px;
-  height: 94px;
-	animation: flipInX 0.5s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	z-index: 10;
-}
-
-.s1_3 {
-	position: absolute;
-  left: 666px;
-  top: 70px;
-  width: 134px;
-  height: 134px;
-	animation: pulse 2s infinite;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	z-index: 10;
-}
-
-.popup {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	z-index: 7;
-	display: none;
-}
-
-.pop_open {
-	position: absolute;
-	width: 120px;
-	height: 100px;
-	right: 0px;
-	bottom: 0px;
-	z-index: 5;
-}
-
-.pop_close {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	z-index: 10;
-	display: none;
-}
-
-
-@keyframes stampIn {
-	0%	{
-		transform-origin: 50% 50%;
-		transform: scale(3);
-		opacity: 0;
-	}
-	100%	{
-		transform: scale(1);
-		opacity: 1;
-	}
 }

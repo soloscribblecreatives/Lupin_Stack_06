@@ -136,7 +136,7 @@ if(direction == 'b') {
   "callback" : "checkLastPgFn"
   };
 
-	window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
+	//window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
 	
 		//window.location = "js-call:" + "1" + ":" + encodeURIComponent(JSON.stringify({query:'NODATA', type:'brandNavigation', callback:'checkLastPgFn'}));
     }else{
@@ -153,16 +153,16 @@ if(direction == 'b') {
   "callback" : "checkLastPgFn"
   };
 
-	window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
+	//window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
 	}
 	
 }else {
 	
 
-	if(page_id <= 1){
+	if(page_id <= 2){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 2){
+		if(page_id == 3){
             flag=1;
         }
 	}
@@ -182,7 +182,7 @@ if(direction == 'b') {
   };
 
 
-	window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
+	//window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
 		 //window.location = "js-call:" + "1" + ":" + encodeURIComponent(JSON.stringify({query:'NODATA', type:'brandNavigation', callback:'checkLastPgFn'}));
     }else{
         localStorage.setItem("gotoNextPrevBrand" ,0);
@@ -198,7 +198,7 @@ if(direction == 'b') {
   "callback" : "checkLastPgFn"
   };
 
-	window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
+	//window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
   
     }
 
@@ -249,9 +249,11 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide1/2.gif" alt="" width="600"/></div><div class="wrap_capsule"><div class="capsule"><img src="slide1/3.png" width="105px"></div><div class="wrap_pellet"><div class="pellet1"><img src="slide1/4.png" width="6px"></div><div class="pellet2"><img src="slide1/5.png" width="6px"></div><div class="pellet3"><img src="slide1/6.png" width="6px"></div><div class="pellet4"><img src="slide1/7.png" width="6px"></div><div class="pellet5"><img src="slide1/8.png" width="6px"></div><div class="pellet6"><img src="slide1/8.png" width="6px"></div><div class="pellet7"><img src="slide1/5.png" width="6px"></div><div class="pellet8"><img src="slide1/4.png" width="6px"></div><div class="pellet9"><img src="slide1/6.png" width="6px"></div><div class="pellet10"><img src="slide1/7.png" width="6px"></div><div class="pellet11"><img src="slide1/4.png" width="6px"></div><div class="pellet12"><img src="slide1/5.png" width="6px"></div><div class="pellet13"><img src="slide1/6.png" width="6px"></div><div class="pellet14"><img src="slide1/7.png" width="6px"></div><div class="pellet15"><img src="slide1/8.png" width="6px"></div><div class="pellet16"><img src="slide1/7.png" width="6px"></div><div class="pellet17"><img src="slide1/4.png" width="6px"></div></div></div><div class="holder"><img src="slide1/9.png"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
-
+	case 2:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
 }
 
 return content;
@@ -290,7 +292,7 @@ function open_page(url,page_id){
   "callback" : "checkLastPgFn"
   };
 
-	window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
+	//window.messageHandler.postMessage(JSON.stringify(params)); //pageswipe
 
 	 $("#wrapper").attr("rel",page_id);
 	 var content="";
