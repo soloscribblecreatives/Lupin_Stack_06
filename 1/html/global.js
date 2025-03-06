@@ -158,10 +158,10 @@ if(direction == 'b') {
 }else {
 	
 
-	if(page_id <= 5){
+	if(page_id <= 6){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 6){
+		if(page_id == 7){
             flag=1;
         }
 	}
@@ -251,19 +251,22 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/s1.png" width="1024" height="768" alt=""></div><div class="s2"><img src="slide1/s2.png" alt=""></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1"><img src="slide2/s1.png" width="1024" height="768" alt=""/></div><div class="s2"><img src="slide2/s2.png"/></div><div class="s3"><img src="slide2/s3.png"/></div><div class="s4"><img src="slide2/s4.png"/></div>';
 	break;
-    case 3:
+	case 3:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
-    case 4:
+	case 4:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 5:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 6:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 }
 
@@ -416,3 +419,30 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
+
+//----------------------------animation----------------------------------//
+
+function hitTab1() {
+	$('.hitTab1').css("display","none");
+	setTimeout(function(){
+		$('.hit_pop1').css("display","block");
+	}, 2000);
+	$('.s2').css("display","none");
+	$('.s3').css("display","block");
+	$('.s4').css("display","block");
+	$('.s5').css("display","block");
+}
+
+/*--------------------- animation javascript -----------------------*/
+
+function hit_pop1() {
+	$('.hit_1').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop1').css("display","none");
+}
+
+function hit_close1() {
+	$('.hit_1').css("display","none");
+	$('.hit_pop1').css("display","block");
+	$('.hit_close1').css("display","none");
+}
