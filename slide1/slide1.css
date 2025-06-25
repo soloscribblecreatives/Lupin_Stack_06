@@ -1,0 +1,20 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	z-index: 1;
+}
+
+.s2 {
+  position: absolute;
+  left: 263px;
+  top: 147px;
+  width: 630px;
+  height: 140px;
+  z-index: 2;
+}
