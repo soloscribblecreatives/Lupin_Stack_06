@@ -1,0 +1,303 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	z-index: 1;
+}
+
+.s2w {
+	position: absolute;
+  left: 746px;
+  top: 286px;
+  width: 292px;
+  height: 412px;
+	animation: fadeOutLeft 1s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 7;
+}
+
+.s2 {
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 292px;
+  height: 412px;
+	animation: none 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	transform-origin: bottom;
+	z-index: 7;
+}
+
+.s3 {
+	position: absolute;
+  left: 0px;
+  top: 606px;
+  width: 1080px;
+  height: 131px;
+	animation: none 1s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 10;
+}
+
+.s4w {
+	position: absolute;
+  left: 78px;
+  top: 137px;
+  width: 657px;
+  height: 400px;
+	animation: fadeOutLeft 1s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s4 {
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 657px;
+  height: 400px;
+	animation: none 0.8s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s5w {
+	position: absolute;
+  left: 774px;
+  top: 547px;
+  width: 249px;
+  height: 249px;
+	animation: slideToLeft 1.5s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 15;
+}
+
+.s5 {
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 249px;
+  height: 249px;
+	animation: none 0.3s;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
+	z-index: 15;
+}
+
+.s6 {
+	position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1080px;
+  height: 810px;
+	animation: fadeIn 0.5s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.s7 {
+	position: absolute;
+  left: 0px;
+  top: 230px;
+  width: 282px;
+  height: 459px;
+	animation: zoomIn 0.7s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	transform-origin: bottom;
+	z-index: 7;
+}
+
+.s8 {
+	position: absolute;
+  left: 153px;
+  top: 88px;
+  width: 806px;
+  height: 236px;
+	animation: zoomIn 0.7s;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s9 {
+	position: absolute;
+  left: 663px;
+  top: 340px;
+  width: 300px;
+  height: 84px;
+	animation: fadeInUp 0.5s;
+	animation-delay: 2.7s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s10 {
+	position: absolute;
+  left: 229px;
+  top: 57px;
+  width: 512px;
+  height: 26px;
+	animation: fadeInDown 0.5s;
+	animation-delay: 2.7s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s11 {
+	position: absolute;
+  left: 175px;
+  top: 466px;
+  width: 310px;
+  height: 65px;
+	animation: fadeInRight 0.5s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s12 {
+	position: absolute;
+  left: 639px;
+  top: 478px;
+  width: 317px;
+  height: 33px;
+	animation: fadeInUp 0.5s;
+	animation-delay: 3.3s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s13w {
+	position: absolute;
+	width: 73px;
+	height: 57px;
+	animation: fadeIn 0.5s;
+	animation-delay: 3.3s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.s13 {
+	position: absolute;
+  left: 555px;
+  top: 466px;
+  width: 73px;
+  height: 57px;
+	animation: upDown 2s infinite;
+	animation-delay: 3.3s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+@font-face {
+	font-family: "SwisBT";
+    src: url("Swis721 Hv BT Heavy.ttf") format("truetype");
+}
+
+.circle {
+	position: absolute;
+	left: 33.5px;
+	bottom: -9px;
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    background-color: #a80000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-family: "SwisBT";
+    font-size: var(--font-size, 110px);
+    font-weight: bold;
+    margin: 50px auto;
+	animation: none 0.3s;
+	animation-delay: 0.3s;
+	animation-fill-mode: both;
+    transition: background-color linear;
+	transition-duration: 0.5s;
+	z-index: 20;
+}
+
+.textUp {
+	position: absolute;
+	left: 68px;
+	top: 50px;
+	font-size: 17px;
+	font-family: "SwisBT";
+	color: #fff;
+	animation: none 0.3s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	transition: color linear;
+	transition-duration: 0s;
+	z-index: 30;
+}
+
+.textDown {
+	position: absolute;
+	left: 92px;
+	top: 165px;
+	font-size: 25px;
+	font-family: "SwisBT";
+	color: #fff;
+	animation: none 0.3s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	transition: color linear;
+	transition-duration: 0s;
+	z-index: 30;
+}
+
+@keyframes slideToLeft {
+  0% {
+    left: 774px;
+	top: 547px;
+	width: 249px;
+	height: 249px;
+	opacity: 1;
+  } 
+  100% {
+	left: 199px;
+	top: 547px;
+	width: 249px;
+	height: 249px;
+	opacity: 1;
+  }
+}
+
+@keyframes upDown {
+  0% {
+	left: 555px;
+	top: 466px;
+	width: 73px;
+	height: 57px;
+	opacity: 1;
+  }
+  50% {
+	left: 555px;
+	top: 480px;
+	width: 73px;
+	height: 57px;
+	opacity: 1;
+  }
+  100% {
+	left: 555px;
+	top: 466px;
+	width: 73px;
+	height: 57px;
+	opacity: 1;
+  }
+}
