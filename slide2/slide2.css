@@ -17,7 +17,7 @@
   width: 292px;
   height: 412px;
 	animation: fadeOutLeft 1s;
-	animation-delay: 1s;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 7;
 }
@@ -54,7 +54,7 @@
   width: 657px;
   height: 400px;
 	animation: fadeOutLeft 1s;
-	animation-delay: 1s;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -78,7 +78,7 @@
   width: 249px;
   height: 249px;
 	animation: slideToLeft 1.5s;
-	animation-delay: 1s;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 15;
 }
@@ -102,7 +102,7 @@
   width: 1080px;
   height: 810px;
 	animation: fadeIn 0.5s;
-	animation-delay: 1s;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 2;
 }
@@ -114,7 +114,7 @@
   width: 282px;
   height: 459px;
 	animation: zoomIn 0.7s;
-	animation-delay: 2s;
+	animation-delay: 1s;
 	animation-fill-mode: both;
 	transform-origin: bottom;
 	z-index: 7;
@@ -127,7 +127,7 @@
   width: 806px;
   height: 236px;
 	animation: zoomIn 0.7s;
-	animation-delay: 2.5s;
+	animation-delay: 1.5s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -139,7 +139,7 @@
   width: 300px;
   height: 84px;
 	animation: fadeInUp 0.5s;
-	animation-delay: 2.7s;
+	animation-delay: 1.7s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -151,7 +151,7 @@
   width: 512px;
   height: 26px;
 	animation: fadeInDown 0.5s;
-	animation-delay: 2.7s;
+	animation-delay: 1.7s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -163,7 +163,7 @@
   width: 310px;
   height: 65px;
 	animation: fadeInRight 0.5s;
-	animation-delay: 3s;
+	animation-delay: 2s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -175,7 +175,7 @@
   width: 317px;
   height: 33px;
 	animation: fadeInUp 0.5s;
-	animation-delay: 3.3s;
+	animation-delay: 2.3s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -185,7 +185,7 @@
 	width: 73px;
 	height: 57px;
 	animation: fadeIn 0.5s;
-	animation-delay: 3.3s;
+	animation-delay: 2.3s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
@@ -197,7 +197,7 @@
   width: 73px;
   height: 57px;
 	animation: upDown 2s infinite;
-	animation-delay: 3.3s;
+	animation-delay: 2.3s;
 	animation-fill-mode: both;
 	z-index: 5;
 }
