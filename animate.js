@@ -5,7 +5,7 @@ function runAnimation() {
   let startValue = 78;
   let endValue = 65;
   let duration = 1000;   // in ms (1 seconds)
-  let delay = 1000;      // in ms (1 seconds)
+  let delay = 0000;      // in ms (0 seconds)
   let fontSize = "110px"; // font size
 
   const circle = document.getElementById("counterCircle");
